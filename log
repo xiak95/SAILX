@@ -1,0 +1,70 @@
+gcc  RV_SAIL/riscv_sim.c -o sim
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `report_arch':
+riscv_sim.c:(.text+0x19f): undefined reference to `zxlen_val'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `is_32bit_model':
+riscv_sim.c:(.text+0x1cf): undefined reference to `zxlen_val'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `process_args':
+riscv_sim.c:(.text+0x49d): undefined reference to `rv_enable_dirty_update'
+/usr/bin/ld: riscv_sim.c:(.text+0x4c9): undefined reference to `rv_enable_misaligned'
+/usr/bin/ld: riscv_sim.c:(.text+0x4f5): undefined reference to `rv_enable_pmp'
+/usr/bin/ld: riscv_sim.c:(.text+0x521): undefined reference to `rv_enable_rvc'
+/usr/bin/ld: riscv_sim.c:(.text+0x54d): undefined reference to `rv_enable_writable_misa'
+/usr/bin/ld: riscv_sim.c:(.text+0x579): undefined reference to `rv_enable_fdext'
+/usr/bin/ld: riscv_sim.c:(.text+0x5a5): undefined reference to `rv_mtval_has_illegal_inst_bits'
+/usr/bin/ld: riscv_sim.c:(.text+0x62b): undefined reference to `rv_ram_size'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `check_elf':
+riscv_sim.c:(.text+0x859): undefined reference to `zxlen_val'
+/usr/bin/ld: riscv_sim.c:(.text+0x866): undefined reference to `zxlen_val'
+/usr/bin/ld: riscv_sim.c:(.text+0x892): undefined reference to `zxlen_val'
+/usr/bin/ld: riscv_sim.c:(.text+0x89f): undefined reference to `zxlen_val'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `load_sail':
+riscv_sim.c:(.text+0x8ea): undefined reference to `load_elf'
+/usr/bin/ld: riscv_sim.c:(.text+0x922): undefined reference to `rv_htif_tohost'
+/usr/bin/ld: riscv_sim.c:(.text+0x931): undefined reference to `lookup_sym'
+/usr/bin/ld: riscv_sim.c:(.text+0x966): undefined reference to `rv_htif_tohost'
+/usr/bin/ld: riscv_sim.c:(.text+0x998): undefined reference to `lookup_sym'
+/usr/bin/ld: riscv_sim.c:(.text+0x9dd): undefined reference to `lookup_sym'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `init_sail_reset_vector':
+riscv_sim.c:(.text+0xa96): undefined reference to `rv_rom_base'
+/usr/bin/ld: riscv_sim.c:(.text+0xaa1): undefined reference to `rv_rom_base'
+/usr/bin/ld: riscv_sim.c:(.text+0xad8): undefined reference to `write_mem'
+/usr/bin/ld: riscv_sim.c:(.text+0xb31): undefined reference to `write_mem'
+/usr/bin/ld: riscv_sim.c:(.text+0xb9b): undefined reference to `write_mem'
+/usr/bin/ld: riscv_sim.c:(.text+0xbb1): undefined reference to `rv_rom_base'
+/usr/bin/ld: riscv_sim.c:(.text+0xbc2): undefined reference to `rv_rom_size'
+/usr/bin/ld: riscv_sim.c:(.text+0xbc9): undefined reference to `rv_rom_base'
+/usr/bin/ld: riscv_sim.c:(.text+0xbd0): undefined reference to `zPC'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `preinit_sail':
+riscv_sim.c:(.text+0xbdc): undefined reference to `model_init'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `init_sail':
+riscv_sim.c:(.text+0xbf5): undefined reference to `zinit_model'
+/usr/bin/ld: riscv_sim.c:(.text+0xc08): undefined reference to `rv_enable_rvc'
+/usr/bin/ld: riscv_sim.c:(.text+0xc20): undefined reference to `z_set_Misa_C'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `reinit_sail':
+riscv_sim.c:(.text+0xc34): undefined reference to `model_fini'
+/usr/bin/ld: riscv_sim.c:(.text+0xc39): undefined reference to `model_init'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `write_signature':
+riscv_sim.c:(.text+0xd2e): undefined reference to `read_mem'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `finish':
+riscv_sim.c:(.text+0xdba): undefined reference to `model_fini'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `run_sail':
+riscv_sim.c:(.text+0x1042): undefined reference to `create_sail_int'
+/usr/bin/ld: riscv_sim.c:(.text+0x1055): undefined reference to `convert_sail_int_of_mach_int'
+/usr/bin/ld: riscv_sim.c:(.text+0x1061): undefined reference to `zstep'
+/usr/bin/ld: riscv_sim.c:(.text+0x106b): undefined reference to `have_exception'
+/usr/bin/ld: riscv_sim.c:(.text+0x1084): undefined reference to `kill_sail_int'
+/usr/bin/ld: riscv_sim.c:(.text+0x1178): undefined reference to `zhtif_done'
+/usr/bin/ld: riscv_sim.c:(.text+0x1183): undefined reference to `zhtif_exit_code'
+/usr/bin/ld: riscv_sim.c:(.text+0x11b1): undefined reference to `zhtif_exit_code'
+/usr/bin/ld: riscv_sim.c:(.text+0x11d9): undefined reference to `rv_insns_per_tick'
+/usr/bin/ld: riscv_sim.c:(.text+0x11ef): undefined reference to `ztick_clock'
+/usr/bin/ld: riscv_sim.c:(.text+0x11f9): undefined reference to `ztick_platform'
+/usr/bin/ld: riscv_sim.c:(.text+0x120a): undefined reference to `zhtif_done'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `init_logs':
+riscv_sim.c:(.text+0x1298): undefined reference to `term_fd'
+/usr/bin/ld: riscv_sim.c:(.text+0x129e): undefined reference to `term_fd'
+/usr/bin/ld: /tmp/ccaeY1lR.o: in function `main':
+riscv_sim.c:(.text+0x137c): undefined reference to `rv_ram_size'
+/usr/bin/ld: riscv_sim.c:(.text+0x140d): undefined reference to `model_fini'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: sim] Error 1

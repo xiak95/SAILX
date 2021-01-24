@@ -21,6 +21,8 @@
 #include "riscv_platform_impl.h"
 #include "riscv_sail.h"
 
+#include <string.h>
+
 #ifdef ENABLE_SPIKE
 #include "tv_spike_intf.h"
 #else
